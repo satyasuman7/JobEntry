@@ -1,0 +1,210 @@
+<html>
+	<head>
+		<title>Carousel  slider multiple design  example </title>
+		<link href="vendor\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+		<link href="vendor\fontawesome\css\all.min.css" rel="stylesheet">
+		<link href="vendor\owl.carousel\assets\owl.carousel.min.css" rel="stylesheet">
+
+		<link href="vendor\icofont\icofont.min.css" rel="stylesheet">
+		<link href="lib\animate\animate.min.css" rel="stylesheet">
+
+
+		<script src="vendor\bootstrap\js\bootstrap.min.js"></script>
+		<script src="vendor\jquery\jquery.min.js"></script>
+    <script src="vendor\owl.carousel\owl.carousel.min.js"></script>
+		<script src="js\carausol_slider.js"></script>
+		
+		<style>
+			.carousel_se_01 .owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.carousel_se_01 .owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 5px;
+  background: #ff5e14;
+  border: 0px solid #ff5e14;
+  display: block;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%; 
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot:hover span {
+  color: #fff;
+  background: #ff5e14;
+/*  border: 5px double;*/
+  padding:5px; 
+  border-radius: 50%; 
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot.active span {
+  color: #fff;
+  background: var(--light_orange);
+  /* border: 5px double;*/
+  opacity:0.8;
+  padding:5px; 
+  border-radius: 50%; 
+  background:var(--light_orange);
+ 
+}
+
+
+
+.carousel_se_01  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 42%;
+    right: -40px;
+     padding: 0px 15px 6px 15px !important;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 35px;
+    color: #e0571d;
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-next:hover {
+    background:#ff5e14;
+    color: #fff;
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-prev {
+   position: absolute;
+    top: 42%;
+    left: -40px;
+    padding: 0px 15px 6px 15px !important;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 35px;
+    color: #e0571d;
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-prev:hover {
+    background:#ff5e14;
+    color: #fff;
+}
+
+
+
+.carousel_se_01 .owl-arrow .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+}
+
+.carousel_se_01 .owl-arrow .owl-nav .owl-prev,
+.carousel_se_01 .owl-arrow .owl-nav .owl-next {
+  display: inline-block;
+  transition: all 0.6s ease-in-out;
+  color: #000000;
+}
+
+.carousel_se_01 .main_services {
+    position: relative;
+    margin: 30px 0px 40px 0px;
+    padding: 40px 15px 32px 15px;
+    overflow: hidden;
+    text-align: center;
+     border: 1px solid transparent; 
+    border-radius: 8px 8px;
+    /* box-shadow: 12px 14px 0 #ececec; */
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+    min-height: 348px;
+}
+
+.carousel_se_01 .main_services:hover {
+     border: 1px solid #ededed ; 
+    box-shadow:none;
+}
+		</style>
+	</head>
+	
+	<body>
+		<section class="carousel_se_01">
+    <div class="container-fluid px-0 py-5">
+         <div class="container pt-5">
+              <div class="row">
+               
+                <div class="col-md-12 px-0  pt-5" style="">
+                    <div class="col-sm-12 text-center">
+                       <h1 class="text-center mb-3">Our Clients Say!!!</h1>
+                        <p class="m-0 ">Hight Quality, Effectiveness and Competitive Prices</p>
+                    </div>
+                    <div class="col-md-12 px-0 p-t-30 ">
+                      <div class="owl-carousel carousel_se_01_carousel owl-theme">
+                               <!-- 1 -->
+                              <div class="testimonial-item bg-light rounded p-4">
+																<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+																<p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+																<div class="d-flex align-items-center">
+																	<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+																	<div class="ps-3">
+																		<h5 class="mb-1">Client Name</h5>
+																		<small>Profession</small>
+																	</div>
+																</div>
+															</div>
+
+                               <!-- 2 -->
+                               <div class="testimonial-item bg-light rounded p-4">
+																<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+																<p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+																<div class="d-flex align-items-center">
+																	<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+																	<div class="ps-3">
+																		<h5 class="mb-1">Client Name</h5>
+																		<small>Profession</small>
+																	</div>
+																</div>
+															</div>
+
+                              <!-- 3 -->
+                              <div class="testimonial-item bg-light rounded p-4">
+																<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+																<p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+																<div class="d-flex align-items-center">
+																	<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+																	<div class="ps-3">
+																		<h5 class="mb-1">Client Name</h5>
+																		<small>Profession</small>
+																	</div>
+																</div>
+															</div>
+
+                                <!-- 4-->
+                              <div class="testimonial-item bg-light rounded p-4">
+																<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+																<p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+																<div class="d-flex align-items-center">
+																	<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+																	<div class="ps-3">
+																		<h5 class="mb-1">Client Name</h5>
+																		<small>Profession</small>
+																	</div>
+																</div>
+															</div>
+                              </div>
+                          </div>
+                </div>
+                
+            </div>
+         </div>
+    </div>
+</section>
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+body{
+	font-family: 'Black Ops One', cursive;
+}
+:root {
+    --primary: #00B074;
+    --secondary: #2B9BFF;
+    --light: #EFFDF5;
+    --dark: #2B3940;
+}
+
+/*** NAVBAR SECTION STARTS ***/
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar-light .navbar-brand,.navbar-light a.btn {
+    height: 75px;
+		color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: #2ECC71;
+}
+
+	.navbar-light .navbar-nav .nav-link {
+    color: #212F3D;
+    font-weight: 500;
+  }
+.navbar-dark .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link {
+    margin-right: 33px;
+    padding: 25px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        top: 100%;
+        margin-top: 0;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+/*** NAVBAR SECTION ENDS ***/
+
+
+/*** CAROUSEL SECTION STARTS ***/
+.header-carousel .container, .page-header .container {
+  position: relative;
+  padding: 45px 0 45px 35px;
+  border-left: 15px solid #00B074;
+}
+/*** CAROUSEL SECTION ENDS ***/
+
+
+/*** TESTIMONIAL SECTION STARTS ***/
+.carousel_se_01 .owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.carousel_se_01 .owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 5px;
+  background: #ff5e14;
+  border: 0px solid #ff5e14;
+  display: block;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%; 
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot:hover span {
+  color: #fff;
+  background: #ff5e14;
+/*  border: 5px double;*/
+  padding:5px; 
+  border-radius: 50%; 
+}
+
+.carousel_se_01  .owl-theme .owl-dots .owl-dot.active span {
+  color: #fff;
+  background: #00B074;
+  /* border: 5px double;*/
+  opacity:0.8;
+  padding:5px; 
+  border-radius: 50%; 
+  background:#00B074;
+ 
+}
+
+
+
+.carousel_se_01  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 42%;
+    right: -40px;
+     padding: 0px 15px 6px 15px !important;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 35px;
+    color: #00B074;
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-next:hover {
+    background:#ff5e14;
+    color: #fff;
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-prev {
+   position: absolute;
+    top: 42%;
+    left: -40px;
+    padding: 0px 15px 6px 15px !important;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 35px;
+    color: #00B074;
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.carousel_se_01  .owl-carousel .owl-nav button.owl-prev:hover {
+    background:#ff5e14;
+    color: #fff;
+}
+
+
+
+.carousel_se_01 .owl-arrow .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+}
+
+.carousel_se_01 .owl-arrow .owl-nav .owl-prev,
+.carousel_se_01 .owl-arrow .owl-nav .owl-next {
+  display: inline-block;
+  transition: all 0.6s ease-in-out;
+  color: #000000;
+}
+
+.carousel_se_01 .main_services {
+    position: relative;
+    margin: 30px 0px 40px 0px;
+    padding: 40px 15px 32px 15px;
+    overflow: hidden;
+    text-align: center;
+     border: 1px solid transparent; 
+    border-radius: 8px 8px;
+    /* box-shadow: 12px 14px 0 #ececec; */
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+    min-height: 348px;
+}
+
+.carousel_se_01 .main_services:hover {
+     border: 1px solid #ededed ; 
+    box-shadow:none;
+}
+/*** TESTIMONIAL SECTION ENDS ***/
+
+
+/*** FOOTER SECTION STARTS ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: #00B074;
+    border-color: white;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .form-control {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #00B074;
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+/*** FOOTER SECTION ENDS ***/
+
+
+/**************************************************	OTHER PAGES	********************************************************/
+/***	CONTACT PAGE STARTS ***/
+.page-header {
+  background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.header-carousel .container,
+.page-header .container {
+    position: relative;
+    padding: 45px 0 45px 35px;
+    border-left: 15px solid  #00B074;
+}
+/***	CONTACT PAGE ENDS ***/
+
+
+/***	ABOUT PAGE STARTS ***/
+.about-bg {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 5px 5px;
+}
+/***	ABOUT PAGE ENDS ***/
